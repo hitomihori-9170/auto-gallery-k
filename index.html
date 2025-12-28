@@ -19,25 +19,29 @@
     }
     .header::before {
         content: "";
-        position: absolute;
-        top: -10px;
-        right: -10px;
+        position: fixed;
+        top: 20px;
+        left: 20px;
         width: 200px;
         height: 200px;
-        background: url('decor_tl.png') no-repeat center/contain;
-        opacity: 0.25;
-        pointer-events:none;
+        background: url('decor_br.png') no-repeat center/contain;
+        opacity: 0.55;
+        transform: rotate(180deg);
+        pointer-events: none;
+        z-index: -1;
     }
     .header::after {
         content: "";
-        position: absolute;
-        bottom: -20px;
-        left: -20px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         width: 220px;
         height: 220px;
-        background: url('decor_br.png') no-repeat center/contain;
-        opacity: 0.25;
+        background: url('decor_tl.png') no-repeat center/contain;
+        opacity: 0.55;
+        transform: rotate(180deg);
         pointer-events: none;
+        z-index: -1;
     }
     .header h1 {
         margin: 0 0 10px;
@@ -6675,7 +6679,7 @@
         </div>
     </div>
     
-<div style='padding:40px 0;text-align:center;font-size:13px;color:#666;'>最終更新：2025-12-29 00:56</div>
+<div style='padding:40px 0;text-align:center;font-size:13px;color:#666;'>最終更新：2025-12-29 01:58</div>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const cards = Array.from(document.querySelectorAll(".card"));
